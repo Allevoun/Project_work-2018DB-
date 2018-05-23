@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Project_work_DB;
 
 namespace Project_work_UI
 {
@@ -23,6 +24,7 @@ namespace Project_work_UI
         public MainWindow()
         {
             InitializeComponent();
+            Class1 C1 = new Class1();
         }
     }
 }
