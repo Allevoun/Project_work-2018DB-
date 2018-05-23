@@ -20,7 +20,7 @@
             <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Managers"></Button>
             <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Content"></Button>
         </StackPanel>
-
+        <Label x:Name="Yulya" Grid.Column="1" Content="Yulya privet" FontSize="75" Visibility="Hidden"></Label>
         <Button VerticalAlignment="Bottom" Height="30" Margin="5" FontSize="20">Properties</Button>
         <Frame Grid.Column="1" x:Name="Frame_mainpages" Margin="10 10 10 40" NavigationUIVisibility="Hidden"></Frame>
     </Grid>

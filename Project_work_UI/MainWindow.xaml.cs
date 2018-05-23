@@ -26,5 +26,10 @@ namespace Project_work_UI
             InitializeComponent();
             Class1 C1 = new Class1();
         }
+
+        private void btn_product_Click(object sender, RoutedEventArgs e)
+        {
+            Yulya.Visibility = Visibility.Visible;
+        }
     }
 }
