@@ -24,5 +24,10 @@ namespace Project_work_UI.Stock_pages
         {
             InitializeComponent();
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
