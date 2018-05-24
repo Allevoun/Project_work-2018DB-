@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_work_DB
+namespace Project_work_UI
 {
-    public class Class1
+    class Logic
     {
     }
 }
