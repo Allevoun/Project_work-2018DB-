@@ -19,7 +19,7 @@
             <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_sales" Content="Sales" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_sales_Click"></Button>
             <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_market" Content="Market" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold"></Button>
         </StackPanel>
-        <Button VerticalAlignment="Bottom" Height="30" Margin="5" FontSize="20" Background="#FFD0B4C0" FontFamily="Segoe UI Semibold" Content="Properties"></Button>
+        <Button VerticalAlignment="Bottom" Height="30" Margin="5" FontSize="20" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Content="Properties"></Button>
         <Frame Grid.Column="1" x:Name="Frame_mainpages" Margin="10 10 10 40" NavigationUIVisibility="Hidden" ></Frame>
     </Grid>
 </Window>

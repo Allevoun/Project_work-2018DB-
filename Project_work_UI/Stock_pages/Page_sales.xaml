@@ -50,7 +50,15 @@
                         <Label Margin="5 -8 0 2"  Width="50" Content="by name" FontSize="11"></Label>
                     </StackPanel>
                     <StackPanel Grid.Row="1" Orientation="Horizontal" FlowDirection="RightToLeft">
-                        <ComboBox Margin="5 0 0 2"  Width="50" SelectionChanged="ComboBox_SelectionChanged" ></ComboBox>
+                        <ComboBox Margin="5 0 0 2"  Width="50" SelectionChanged="ComboBox_SelectionChanged" >
+                            <ComboBox.Background>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                    <GradientStop Color="#FFC56565" Offset="1"/>
+                                </LinearGradientBrush>
+                            </ComboBox.Background>
+                        </ComboBox>
+                        <!--Background="#FFF3D0EA"-->
                         <ComboBox Margin="5 0 0 2"  Width="50"></ComboBox>
                         <ComboBox Margin="5 0 0 2"  Width="50"></ComboBox>
                     </StackPanel>
