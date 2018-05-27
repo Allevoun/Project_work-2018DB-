@@ -1,4 +1,4 @@
-﻿<Page x:Class="Project_work_UI.Stock_pages.Page_sales"
+﻿<Page x:Class="Project_work_UI.Stock_pages.Page_adversisment"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Project_work_UI.Stock_pages"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="Page_sales">
+      Title="Page_adversisment">
 
     <Grid>
         <Grid >
@@ -19,15 +19,15 @@
                 <ColumnDefinition Width="6*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="2" Grid.Column="1" Margin="2.5"></Button>
-            <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="LView_sales" ItemsSource="{Binding ListOfSales}">
+            <Button Grid.Row="2" Grid.Column="1" Margin="2.5">X</Button>
+            <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="LView_adversisment" ItemsSource="{Binding ListOfAdvesisment}">
                 <ListView.View>
                     <GridView>
                         <GridView.Columns>
-                            <GridViewColumn Header="Sale ID" DisplayMemberBinding="{Binding Sale_ID}"></GridViewColumn>
+                            <GridViewColumn Header="Advesisment ID" DisplayMemberBinding="{Binding Ad_ID}"></GridViewColumn>
+                            <GridViewColumn Header="Advesisment place" DisplayMemberBinding="{Binding Ad_place}"></GridViewColumn>
                             <GridViewColumn Header="Product name" DisplayMemberBinding="{Binding Product_name}"></GridViewColumn>
-                            <GridViewColumn Header="Sale Date" DisplayMemberBinding="{Binding SaleDate}"></GridViewColumn>
-                            <GridViewColumn Header="Target ID" DisplayMemberBinding="{Binding Target_ID}"></GridViewColumn>
+                            <GridViewColumn Header="Manager name" DisplayMemberBinding="{Binding Manager_ID}"></GridViewColumn>
                         </GridView.Columns>
                     </GridView>
                 </ListView.View>

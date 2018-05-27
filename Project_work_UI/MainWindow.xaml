@@ -12,6 +12,7 @@
             <ColumnDefinition Width="4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel x:Name="StPnl_buttons"  Grid.Column="0" Margin="0 0 0 45" HorizontalAlignment="Left">
+
             <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_product" Content="Product" Click="btn_product_Click" Background="#FFF3D0EA" FontFamily="Segoe UI Black"></Button>
             <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_promotions" Content="Promotions" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold"></Button>
             <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_adversisdment" Content="Adversisment" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold"/>
