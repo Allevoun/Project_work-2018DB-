@@ -31,19 +31,38 @@ namespace Project_work_UI
         private void btn_product_Click(object sender, RoutedEventArgs e)
         {
             Page_product Pproduct = new Page_product();
-
-            Pproduct.Width = Frame_mainpages.Width;
-            Pproduct.Height = Frame_mainpages.Height;
-            Frame_mainpages.Content = Pproduct;
+            Logic.FrameContentxPage(Pproduct, Frame_mainpages);
         }
 
         private void btn_sales_Click(object sender, RoutedEventArgs e)
         {
             Page_sales Psales = new Page_sales();
+            Logic.FrameContentxPage(Psales, Frame_mainpages);
+        }
 
-            Psales.Width = Frame_mainpages.Width;
-            Psales.Height = Frame_mainpages.Height;
-            Frame_mainpages.Content = Psales;
+        private void btn_promotions_Click(object sender, RoutedEventArgs e)
+        {
+            Page_promotion Ppromotion = new Page_promotion();
+            Logic.FrameContentxPage(Ppromotion, Frame_mainpages);
+
+        }
+
+        private void btn_adversisdment_Click(object sender, RoutedEventArgs e)
+        {
+            Page_adversisment Padversisment = new Page_adversisment();
+            Logic.FrameContentxPage(Padversisment, Frame_mainpages);
+        }
+
+        private void btn_market_Click(object sender, RoutedEventArgs e)
+        {
+            Page_market Pmarket = new Page_market();
+            Logic.FrameContentxPage(Pmarket, Frame_mainpages);
+        }
+
+        private void btn_managers_Click(object sender, RoutedEventArgs e)
+        {
+            Page_managers Pmanagers = new Page_managers();
+            Logic.FrameContentxPage(Pmanagers, Frame_mainpages);
         }
     }
 }

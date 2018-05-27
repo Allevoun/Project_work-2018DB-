@@ -63,6 +63,9 @@
     <Compile Include="Stock_pages\Page_managers.xaml.cs">
       <DependentUpon>Page_managers.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Stock_pages\Page_market.xaml.cs">
+      <DependentUpon>Page_market.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Stock_pages\Page_product.xaml.cs">
       <DependentUpon>Page_product.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Stock_pages\Page_managers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stock_pages\Page_market.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

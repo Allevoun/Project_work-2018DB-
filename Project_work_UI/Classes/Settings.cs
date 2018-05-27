@@ -14,11 +14,6 @@ namespace Project_work_UI
          * Background="#FFD0B4C0" settings (properties)
          * FontFamily="Segoe UI Semibold"  all another
          * FontFamily="Segoe UI Black"  product entitye
-         * 
-        
-        
-
-
             */
     }
 }
