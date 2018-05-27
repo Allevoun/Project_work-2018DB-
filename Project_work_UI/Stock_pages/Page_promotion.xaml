@@ -1,0 +1,41 @@
+﻿<Page x:Class="Project_work_UI.Stock_pages.Page_promotion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project_work_UI.Stock_pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page_promotion">
+
+    <Grid>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="8*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="2" Grid.Column="1" Margin="2.5"></Button>
+            <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="LView_promotions" ItemsSource="{Binding ListOfPromotions}">
+                <ListView.View>
+                    <GridView>
+                        <GridView.Columns>
+                            <GridViewColumn Header="Promotion ID" DisplayMemberBinding="{Binding Sale_ID}"></GridViewColumn>
+                            <GridViewColumn Header="Promotion name" DisplayMemberBinding="{Binding Pr_name}"></GridViewColumn>
+                            <GridViewColumn Header="Product name" DisplayMemberBinding="{Binding Product_name}"></GridViewColumn>
+                            <GridViewColumn Header="Date start" DisplayMemberBinding="{Binding Date_start}"></GridViewColumn>
+                            <GridViewColumn Header="Manager name" DisplayMemberBinding="{Binding Target_ID}"></GridViewColumn>
+                            <!--<GridViewColumn Header="Finishe" DisplayMemberBinding="{Binding Target_ID}"></GridViewColumn>-->
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+                <ListView.Resources>
+                </ListView.Resources>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

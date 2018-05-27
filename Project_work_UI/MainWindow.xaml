@@ -5,23 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_work_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="500" Width="750" Background="#FFF68CC6" >
+    <Grid x:Name="Grid_Base">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Name="clm" Width="110"></ColumnDefinition>
-            <ColumnDefinition/>
+            <ColumnDefinition Name="Clm_1" Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Line Name="StartLine"  X1="110" Y1="0" X2="110" Y2="400" Stroke="LightSlateGray"></Line>
-        <StackPanel Grid.Column="0" Margin="0 0 0 35" HorizontalAlignment="Left">
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 20 5 10"  FontSize="20" Content="Product" Click="btn_product_Click"></Button>
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Promotions"></Button>
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Adversisment"></Button>
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Managers"></Button>
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Managers"></Button>
-            <Button VerticalAlignment="Top"  Height="50" Margin="5 10"  FontSize="20" Content="Content"></Button>
-        </StackPanel>
+        <StackPanel x:Name="StPnl_buttons"  Grid.Column="0" Margin="0 0 0 45" HorizontalAlignment="Left">
 
-        <Button VerticalAlignment="Bottom" Height="30" Margin="5" FontSize="20">Properties</Button>
-        <Frame Grid.Column="1" x:Name="Frame_mainpages" Margin="10 10 10 40" NavigationUIVisibility="Hidden"></Frame>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_product" Content="Product" Click="btn_product_Click" Background="#FFF3D0EA" FontFamily="Segoe UI Black"></Button>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_promotions" Content="Promotions" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_promotions_Click"></Button>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_adversisdment" Content="Adversisment" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_adversisdment_Click"/>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_managers" Content="Managers" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_managers_Click"></Button>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_sales" Content="Sales" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_sales_Click"></Button>
+            <Button VerticalAlignment="Top"  Height="45" Margin="5 10"  FontSize="20" x:Name="btn_market" Content="Market" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Click="btn_market_Click"></Button>
+        </StackPanel>
+        <Button VerticalAlignment="Bottom" Height="30" Margin="5" FontSize="20" Background="#FFF3D0EA" FontFamily="Segoe UI Semibold" Content="Properties"></Button>
+        <Frame Grid.Column="1" x:Name="Frame_mainpages" Margin="10 10 10 40" NavigationUIVisibility="Hidden" ></Frame>
     </Grid>
 </Window>
