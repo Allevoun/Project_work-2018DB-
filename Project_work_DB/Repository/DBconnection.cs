@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_work_DB
+namespace Project_work_DB.Repository
 {
     public static class DBconnection
     {
@@ -22,7 +22,7 @@ namespace Project_work_DB
         
         public static string CnnVal()
         {
-            return ConfigurationManager.ConnectionStrings["DBmodel"].ConnectionString);
+            return ConfigurationManager.ConnectionStrings["DBmodel"].ConnectionString;
         } 
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Project_work_DB.Repository;
 
 namespace Project_work_UI.Stock_pages
 {
@@ -23,6 +24,12 @@ namespace Project_work_UI.Stock_pages
         public Page_product()
         {
             InitializeComponent();
+            DBaccess dbentree = new DBaccess();
+            SQLquery sqlmessage = new SQLquery();
+
+            ProductList = dbentree.GetDBInfo<PRODUCT>(sqlmessage.Query_Product);
         }
+
+        List<PRODUCT> ProductList = new List<PRODUCT>();
     }
 }
